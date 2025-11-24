@@ -15,7 +15,6 @@ Everything is structured cleanly so you can build + deploy without confusion.
 
 ```
 bulkmailer-cli/
-│
 ├── cmd/
 │   ├── root.go
 │   ├── login.go
@@ -23,7 +22,6 @@ bulkmailer-cli/
 │   ├── send.go
 │   ├── status.go
 │   └── config.go
-│
 ├── internal/
 │   ├── api/
 │   │   ├── client.go
@@ -31,24 +29,18 @@ bulkmailer-cli/
 │   │   ├── upload.go
 │   │   ├── send.go
 │   │   └── status.go
-│   │
 │   ├── cache/
 │   │   ├── cache.go
 │   │   └── sqlite.go
-│   │
 │   ├── csv/
 │   │   ├── parser.go
 │   │   └── validator.go
-│   │
 │   ├── config/
 │   │   └── config.go
-│   │
 │   └── ui/
 │       └── interactive.go   # for interactive menus (e.g., choose CSV, confirm send, etc.)
-│
 ├── pkg/
 │   └── util.go
-│
 ├── go.mod
 ├── go.sum
 └── README.md
